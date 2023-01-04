@@ -11,6 +11,7 @@ var plusOne = function(digits) {
             digits[i] = 0;
             digits[i-1] +=1;
         }
+        if(digits[i-1] < 10) break
     }
     
     if(digits[0] === 0) digits.unshift(1);
