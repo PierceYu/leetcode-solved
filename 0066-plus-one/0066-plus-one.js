@@ -3,7 +3,6 @@
  * @return {number[]}
  */
 var plusOne = function(digits) {
-    if(digits.length === 1 && digits[0] === 9) return [1,0];
     
     digits[digits.length-1] += 1;
     
