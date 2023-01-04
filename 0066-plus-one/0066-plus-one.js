@@ -14,7 +14,5 @@ var plusOne = function(digits) {
         if(digits[i-1] < 10) break
     }
     
-    if(digits[0] === 0) digits.unshift(1);
-    
-    return digits;
+    return digits[0] === 0 ? [1].concat(digits) : digits;
 };
