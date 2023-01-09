@@ -18,7 +18,5 @@ var merge = function(nums1, m, nums2, n) {
     }
     }
     
-    if(!m && nums2.length === 1) nums1[0] = nums2[0]
-    
     return nums1.sort((a,b)=> a-b)
 };
