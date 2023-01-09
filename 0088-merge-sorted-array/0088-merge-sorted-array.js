@@ -7,16 +7,15 @@
  */
 var merge = function(nums1, m, nums2, n) {
 
-    if(!n) return nums1;
     if(m === 0) {
-    for(let i = n-1; i >= m; i--) {
-        nums1[i] = nums2[i]
-    }
-    }else {
-         for(let i = m+n-1; i >= m; i--) {
-        nums1[i] = nums2[i-m]
-    }
+        for(let i = n-1; i >= m; i--) {
+            nums1[i] = nums2[i]
+        }
+    } else {
+        for(let i = m+n-1; i >= m; i--) {
+            nums1[i] = nums2[i-m]
+        }
     }
     
-    return nums1.sort((a,b)=> a-b)
+    nums1.sort((a,b)=> a-b)
 };
