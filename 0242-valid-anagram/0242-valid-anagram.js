@@ -5,7 +5,7 @@
  */
 var isAnagram = function(s, t) {
     
-    if(s.length !== t.length) return false
+    if(s.length !== t.length) return false;
        
     s = s.split('').sort();
     t = t.split('').sort();
